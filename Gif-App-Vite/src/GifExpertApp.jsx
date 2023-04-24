@@ -2,10 +2,11 @@ import { useState } from "react";
 import AddCategory from "./componets/AddCategory";
 import { v4 as uuidv4 } from "uuid";
 import GifGrid from "./componets/GifGrid";
+import Footer from "./componets/Footer";
 
 const GifExpertApp = () => {
   const [categories, setCategories] = useState([
-    "Spiderman",
+    "",
   ]);
 
   const onAddCategory = (newCategory) => {
@@ -18,7 +19,8 @@ const GifExpertApp = () => {
 
   return (
     <>
-      <h1>Gif expert App</h1>
+      <h1>Gif App</h1>
+      <p className="explanation-title">Busca el gif que quieras, introduciendolo abajo, ejem: Batman </p>
       <AddCategory
         //setCategories={setCategories}
         onNewCategory={onAddCategory}
@@ -29,6 +31,7 @@ const GifExpertApp = () => {
             key={uuidv4()} 
             category={category} />
       ))}
+      <Footer/>
     </>
   );
 };
