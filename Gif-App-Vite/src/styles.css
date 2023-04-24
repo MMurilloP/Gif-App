@@ -1,0 +1,128 @@
+* {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #2a9d8f;
+}
+
+body {
+  padding: 60px;
+  background: linear-gradient(to bottom right, #264653, #2a9d8f);
+  height: 100vh;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 80px;
+  
+}
+
+footer{
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  text-align: right;
+}
+
+a{
+  margin: 10px;
+}
+
+input {
+  background-color: white;
+  border-radius: 5px;
+  border: 2px solid rgb(97, 32, 158);
+  color: black;
+  font-size: 1.2rem;
+  outline: none;
+  padding: 10px 15px;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+input:hover,
+input:focus {
+  border-color: #8a3ffc;
+  transform: scale(1.05);
+}
+
+h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+h1:hover {
+  color: #8a3ffc;
+  transform: rotate(5deg);
+}
+
+.explanation-title {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.input-value {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+p {
+  margin: 1rem;
+  transform: skewX(-10deg);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.card {
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.card p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 20px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+  margin-bottom: 20px;
+  transform: scale(1.1) rotate(-2deg);
+}
