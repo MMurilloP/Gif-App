@@ -9,6 +9,7 @@ const getGifs = async (category) => {
   const gifs = data.map((img) => ({
     id: img.id,
     url: img.images.downsized_medium.url,
+    title: img.title,
   }));
   return gifs
 };

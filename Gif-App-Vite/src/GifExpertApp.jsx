@@ -1,7 +1,7 @@
 import { useState } from "react";
 import AddCategory from "./componets/AddCategory";
 import { v4 as uuidv4 } from "uuid";
-import GrifGrid from "./componets/GrifGrid";
+import GifGrid from "./componets/GifGrid";
 
 const GifExpertApp = () => {
   const [categories, setCategories] = useState([
@@ -25,7 +25,7 @@ const GifExpertApp = () => {
       />
 
       {categories.map((category) => (
-        <GrifGrid 
+        <GifGrid 
             key={uuidv4()} 
             category={category} />
       ))}
