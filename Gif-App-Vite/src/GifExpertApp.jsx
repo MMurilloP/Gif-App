@@ -22,9 +22,9 @@ const GifExpertApp = () => {
   }
 
   return (
-    <>
+    <div className="app-container">
       <h1>Gif App</h1>
-      <p className="explanation-title">Busca el gif que quieras, introduciendolo abajo, ejem: Batman y pulsa enter</p>
+      <p className="explanation-title">**Busca el gif que quieras, introduciendolo abajo, ejem: Batman y pulsa enter**</p>
       <AddCategory
         //setCategories={setCategories}
         onNewCategory={onAddCategory}
@@ -37,7 +37,7 @@ const GifExpertApp = () => {
             category={category} />
       ))}
       <Footer/>
-    </>
+    </div>
   );
 };
 

@@ -32,7 +32,7 @@ footer{
 
 .css-button-arrow--black {
   margin: 10px;
-  min-width: 130px;
+  width: 90px;
   height: 40px;
   color: #fff;
   padding: 5px 10px;
@@ -71,6 +71,11 @@ a{
   margin: 10px;
 }
 
+.app-container{
+  display: flex;
+  flex-direction: column;
+  
+}
 input {
   background-color: white;
   border-radius: 5px;
@@ -79,7 +84,7 @@ input {
   font-size: 1.2rem;
   outline: none;
   padding: 10px 15px;
-  width: 100%;
+  width: 50%;
   transition: all 0.3s ease-in-out;
 }
 
