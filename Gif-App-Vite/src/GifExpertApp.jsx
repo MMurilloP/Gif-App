@@ -17,14 +17,18 @@ const GifExpertApp = () => {
     setCategories([newCategory, ...categories]);
   };
 
+  const reset = () => {
+    setCategories ([])
+  }
+
   return (
-    <>
+    <div className="app-container">
       <h1>Gif App</h1>
-      <p className="explanation-title">Busca el gif que quieras, introduciendolo abajo, ejem: Batman </p>
+      <p className="explanation-title">**Busca el gif que quieras, introduciendolo abajo, ejem: Batman y pulsa enter**</p>
       <AddCategory
-        //setCategories={setCategories}
         onNewCategory={onAddCategory}
       />
+      <button className="css-button-arrow--black" onClick={reset}>Reset</button>
 
       {categories.map((category) => (
         <GifGrid 
@@ -32,7 +36,7 @@ const GifExpertApp = () => {
             category={category} />
       ))}
       <Footer/>
-    </>
+    </div>
   );
 };
 

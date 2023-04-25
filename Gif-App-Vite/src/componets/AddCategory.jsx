@@ -29,7 +29,9 @@ const AddCategory = ({ onNewCategory }) => {
         value={inputValue}
         onChange={onInputChanged}
       />
+      
     </form>
+
   );
 };
 
