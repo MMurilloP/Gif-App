@@ -26,7 +26,6 @@ const GifExpertApp = () => {
       <h1>Gif App</h1>
       <p className="explanation-title">**Busca el gif que quieras, introduciendolo abajo, ejem: Batman y pulsa enter**</p>
       <AddCategory
-        //setCategories={setCategories}
         onNewCategory={onAddCategory}
       />
       <button className="css-button-arrow--black" onClick={reset}>Reset</button>
