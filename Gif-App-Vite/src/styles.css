@@ -30,6 +30,28 @@ footer{
   text-align: right;
 }
 
+form {
+  display: flex;
+  justify-content: space-between
+}
+
+.btn-search {
+  background-color: #343a40;
+  margin-left: 5px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 16px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-search:hover {
+  background-color: #af782b;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
 .css-button-arrow--black {
   margin: 10px;
   width: 90px;
@@ -71,11 +93,6 @@ a{
   margin: 10px;
 }
 
-.app-container{
-  display: flex;
-  flex-direction: column;
-  
-}
 input {
   background-color: white;
   border-radius: 5px;
@@ -84,14 +101,14 @@ input {
   font-size: 1.2rem;
   outline: none;
   padding: 10px 15px;
-  width: 50%;
+  width: 80%;
   transition: all 0.3s ease-in-out;
 }
 
 input:hover,
 input:focus {
   border-color: #8a3ffc;
-  transform: scale(1.05);
+  transform: scale(0.85);
 }
 
 h1 {

@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 // eslint-disable-next-line react/prop-types
-const AddCategory = ({ onNewCategory }) => {
+const AddCategory = ({ onNewCategory, setCategories }) => {
   const [inputValue, setInputValue] = useState("");
 
   // const onInputChanged = (event) => {
@@ -21,6 +21,10 @@ const AddCategory = ({ onNewCategory }) => {
     setInputValue("") // limpia el input una vez que hemos dado enter.
   };
 
+  const reset = () => {
+    setCategories ([])
+  }
+
   return (
     <form onSubmit={onSubmit}>
       <input
@@ -29,7 +33,9 @@ const AddCategory = ({ onNewCategory }) => {
         value={inputValue}
         onChange={onInputChanged}
       />
-      
+      <button onSubmit={{onSubmit}} className="btn-search ">🔎</button>
+      <button className="css-button-arrow--black" onClick={reset}>Reset</button>
+
     </form>
 
   );
